@@ -39,12 +39,12 @@ namespace LinkedListDemo
 
                         break;
                     case 4:
-                        Console.WriteLine("Welcomr to Linked List Node");
+                        Console.WriteLine("Welcome to Linked List Node");
                         
                         linked_List_Node.Add(4);
-                        linked_List_Node.Display();
+                        //linked_List_Node.Display();
                         linked_List_Node.Add(6);
-                        linked_List_Node.Display();
+                        //linked_List_Node.Display();
                         linked_List_Node.Add(9);
                         linked_List_Node.Display();
                         break;
