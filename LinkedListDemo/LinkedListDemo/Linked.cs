@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace LinkedListDemo
 {
+
     public class Linked
     {
+        //Linked List is a linear dta structure which stores the elemnt in the non-contagious Location.
+        //The Node had element are Linked with each other using pointer.
+        //Linked List class allows insertion and deletion of element from list very fastly.
+        //Node- node will be your exact value
+        //next-reference of the next node
         public void List()
         {
             LinkedList<int> list = new LinkedList<int>();

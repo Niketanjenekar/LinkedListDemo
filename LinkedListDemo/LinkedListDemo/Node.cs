@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace LinkedListDemo
 {
-    public class Queue_Demo
+    public class Node
     {
-        public void Queue_D()
+        public int data;
+        public Node next;
+        public Node(int data) 
         {
-            Console.WriteLine("Welcome ");
+            this.data = data;
         }
+
     }
 }
