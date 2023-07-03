@@ -60,5 +60,15 @@ namespace LinkedListDemo
                 head.next = temp;
             }
         }
+
+        public void Empty_First()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            head = head.next;
+            Console.WriteLine("First Element is Removed");
+        }
     }
 }

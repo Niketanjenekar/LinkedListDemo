@@ -20,6 +20,7 @@ namespace LinkedListDemo
                 Console.WriteLine("3. Queue_Demo");
                 Console.WriteLine("4. Linked_List_Node");
                 Console.WriteLine("5. Reverse the Order");
+                Console.WriteLine("6. Remove the First Element");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -53,6 +54,10 @@ namespace LinkedListDemo
                         linked_List_Node.Reverse_Order(60);
                         linked_List_Node.Reverse_Order(88);
                         linked_List_Node.Reverse_Order(91);
+                        linked_List_Node.Display();
+                        break;
+                    case 6:
+                        linked_List_Node.Empty_First();
                         linked_List_Node.Display();
                         break;
                     default:
