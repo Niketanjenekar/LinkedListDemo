@@ -11,6 +11,7 @@ namespace LinkedListDemo
     {
         public static void Main(string[] args)
         {
+            Linked_List_Node linked_List_Node = new Linked_List_Node();
             while (true)
             {
                 Console.WriteLine("Please Select the Option: ");
@@ -18,6 +19,7 @@ namespace LinkedListDemo
                 Console.WriteLine("2. Stack_Demo");
                 Console.WriteLine("3. Queue_Demo");
                 Console.WriteLine("4. Linked_List_Node");
+                Console.WriteLine("5. Reverse the Order");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -38,12 +40,19 @@ namespace LinkedListDemo
                         break;
                     case 4:
                         Console.WriteLine("Welcomr to Linked List Node");
-                        Linked_List_Node linked_List_Node = new Linked_List_Node();
+                        
                         linked_List_Node.Add(4);
                         linked_List_Node.Display();
                         linked_List_Node.Add(6);
                         linked_List_Node.Display();
                         linked_List_Node.Add(9);
+                        linked_List_Node.Display();
+                        break;
+                    case 5:
+                        linked_List_Node.Reverse_Order(40);
+                        linked_List_Node.Reverse_Order(60);
+                        linked_List_Node.Reverse_Order(88);
+                        linked_List_Node.Reverse_Order(91);
                         linked_List_Node.Display();
                         break;
                     default:
