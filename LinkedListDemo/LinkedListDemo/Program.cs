@@ -40,8 +40,11 @@ namespace LinkedListDemo
                         Console.WriteLine("Welcomr to Linked List Node");
                         Linked_List_Node linked_List_Node = new Linked_List_Node();
                         linked_List_Node.Add(4);
+                        linked_List_Node.Display();
                         linked_List_Node.Add(6);
+                        linked_List_Node.Display();
                         linked_List_Node.Add(9);
+                        linked_List_Node.Display();
                         break;
                     default:
                         Console.WriteLine("Please enter the Valid Option");
