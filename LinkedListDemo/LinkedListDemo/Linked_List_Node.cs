@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -69,6 +70,28 @@ namespace LinkedListDemo
             }
             head = head.next;
             Console.WriteLine("First Element is Removed");
+        }
+
+        public void Empty_Last()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("The List is Empty");
+            }
+            if(head.next == null)
+            {
+                Console.WriteLine("it only Contains single element");
+            }
+            else
+            {
+                Node temp = head;
+                while(temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = null;
+                Console.WriteLine("The Last Element is Deleted");
+            }
         }
     }
 }
