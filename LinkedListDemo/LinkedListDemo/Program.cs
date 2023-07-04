@@ -22,6 +22,8 @@ namespace LinkedListDemo
                 Console.WriteLine("5. Reverse the Order");
                 Console.WriteLine("6. Remove the First Element");
                 Console.WriteLine("7. Remove the Last Element");
+                Console.WriteLine("8. Size Of The Linked-List");
+                Console.WriteLine("9. Searching the List");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -36,18 +38,18 @@ namespace LinkedListDemo
                         stack.Element();
                         break;
                     case 3:
-                        Console.WriteLine("Welcomr to Queue ");
+                        Console.WriteLine("Welcome to Queue ");
                         Queue queue = new Queue();
 
                         break;
                     case 4:
                         Console.WriteLine("Welcome to Linked List Node");
                         
-                        linked_List_Node.Add(4);
+                        linked_List_Node.Add(41);
                         linked_List_Node.Display();
-                        linked_List_Node.Add(6);
+                        linked_List_Node.Add(67);
                         linked_List_Node.Display();
-                        linked_List_Node.Add(9);
+                        linked_List_Node.Add(93);
                         linked_List_Node.Display();
                         break;
                     case 5:
@@ -65,13 +67,20 @@ namespace LinkedListDemo
                         linked_List_Node.Empty_Last();
                         linked_List_Node.Display();
                         break;
+                    case 8:
+                        linked_List_Node.Size();
+                        break;
+                    case 9:
+                        int val = linked_List_Node.Search(93);
+                        Console.WriteLine("The Value is Present in the Linked-List at Position :  " + val);
+                        //linked_List_Node.Display();
+                        break;
                     default:
-                        Console.WriteLine("Please enter the Valid Option");
+                        Console.WriteLine("Please Enter the Valid Option");
                         break;
                 }
             }
-
-            Console.ReadLine();
+            
         }
     }
 }
