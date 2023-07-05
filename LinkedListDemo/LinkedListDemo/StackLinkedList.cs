@@ -37,6 +37,7 @@ namespace LinkedListDemo
                 temp = temp.next;
             }
         }
+        //Will return top but will not ddelete the data.
         public void Peek()
         {
             if(top == null)
@@ -47,6 +48,19 @@ namespace LinkedListDemo
             Console.WriteLine("The Element at the Top is : ");
             Console.WriteLine(top.data);
             
+        }
+
+        //Will return the top value and removes the data.
+        public void pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty ");
+                return;
+            }
+            Console.WriteLine("The Element at the Top is : ");
+            Console.WriteLine(top.data);
+            top = top.next;
         }
     }
 }

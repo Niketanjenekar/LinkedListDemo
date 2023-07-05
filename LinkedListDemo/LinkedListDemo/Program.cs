@@ -25,6 +25,7 @@ namespace LinkedListDemo
                 Console.WriteLine("8. Size Of The Linked-List");
                 Console.WriteLine("9. Searching the List");
                 Console.WriteLine("10. Adding Elements to Stack");
+                Console.WriteLine("11. Adding Elements to Queue");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -84,8 +85,27 @@ namespace LinkedListDemo
                         stackLinkedList.push(45);
                         stackLinkedList.push(10);
                         stackLinkedList.push(15);
+                        Console.WriteLine("*****************************************");
                         stackLinkedList.Display();
+                        Console.WriteLine("*****************************************");
                         stackLinkedList.Peek();
+                        Console.WriteLine("*****************************************");
+                        stackLinkedList.pop();
+                        Console.WriteLine("*****************************************");
+                        stackLinkedList.Display();                      
+                        break;
+                    case 11:
+                        QueueLinkedList queueLinkedList = new QueueLinkedList();
+                        queueLinkedList.Enqueue(14);
+                        queueLinkedList.Enqueue(20);
+                        queueLinkedList.Enqueue(35);
+                        queueLinkedList.Enqueue(24);
+                        Console.WriteLine("***************************");
+                        queueLinkedList.Display();
+                        Console.WriteLine("***************************");
+                        queueLinkedList.Dequeue();
+                        Console.WriteLine("***************************");
+                        queueLinkedList.Display();
                         break;
                     default:
                         Console.WriteLine("Please Enter the Valid Option");
