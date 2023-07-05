@@ -24,6 +24,7 @@ namespace LinkedListDemo
                 Console.WriteLine("7. Remove the Last Element");
                 Console.WriteLine("8. Size Of The Linked-List");
                 Console.WriteLine("9. Searching the List");
+                Console.WriteLine("10. Adding Elements to Stack");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -74,6 +75,14 @@ namespace LinkedListDemo
                         int val = linked_List_Node.Search(93);
                         Console.WriteLine("The Value is Present in the Linked-List at Position :  " + val);
                         //linked_List_Node.Display();
+                        break;
+                    case 10:
+                        StackLinkedList stackLinkedList = new StackLinkedList();
+                        stackLinkedList.push(5);
+                        stackLinkedList.push(9);
+                        stackLinkedList.push(10);
+                        stackLinkedList.push(15);
+                        stackLinkedList.Display();
                         break;
                     default:
                         Console.WriteLine("Please Enter the Valid Option");
