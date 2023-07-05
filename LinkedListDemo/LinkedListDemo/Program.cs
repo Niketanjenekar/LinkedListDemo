@@ -77,12 +77,14 @@ namespace LinkedListDemo
                         //linked_List_Node.Display();
                         break;
                     case 10:
+                        Console.WriteLine("Welcome to LinkedList Stack");
                         StackLinkedList stackLinkedList = new StackLinkedList();
                         stackLinkedList.push(5);
                         stackLinkedList.push(9);
                         stackLinkedList.push(10);
                         stackLinkedList.push(15);
                         stackLinkedList.Display();
+                        stackLinkedList.Peek();
                         break;
                     default:
                         Console.WriteLine("Please Enter the Valid Option");

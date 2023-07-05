@@ -37,5 +37,16 @@ namespace LinkedListDemo
                 temp = temp.next;
             }
         }
+        public void Peek()
+        {
+            if(top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine("The Element at the Top is : ");
+            Console.WriteLine(top.data);
+            
+        }
     }
 }
