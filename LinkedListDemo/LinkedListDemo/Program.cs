@@ -81,6 +81,7 @@ namespace LinkedListDemo
                         StackLinkedList stackLinkedList = new StackLinkedList();
                         stackLinkedList.push(5);
                         stackLinkedList.push(9);
+                        stackLinkedList.push(45);
                         stackLinkedList.push(10);
                         stackLinkedList.push(15);
                         stackLinkedList.Display();

@@ -41,7 +41,7 @@ namespace LinkedListDemo
         {
             if(top == null)
             {
-                Console.WriteLine("Stack is Empty");
+                Console.WriteLine("Stack is Empty ");
                 return;
             }
             Console.WriteLine("The Element at the Top is : ");
